@@ -7,27 +7,29 @@
 ### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
 
 ---
-# Green Earth
 
+# Green Earth
 
 ## Private Repository: https://classroom.github.com/a/nVZrg5R9
 
+---
 
----
-🌴 API Endpoints
----
+## 🌴 API Endpoints
+
 1. Get 🌴All Plants
+
 ```bash
 https://openapi.programming-hero.com/api/plants
 ```
 
 2. Get 🌴All categories <br/>
+
 ```bash
 https://openapi.programming-hero.com/api/categories
 ```
 
-
 3. Get 🌴plants by categories <br/>
+
 ```bash
 https://openapi.programming-hero.com/api/category/${id}
 ```
@@ -45,45 +47,60 @@ https://openapi.programming-hero.com/api/plant/${id}
 ```bash
 https://openapi.programming-hero.com/api/plant/1
 ```
+
 ---
 
-
-
-
-## ✅ Main Requirements 
+## ✅ Main Requirements
 
 #### 1) Navbar
 
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
+- Website **logo/name** on the **left**
+- **Menu items** in the **center**
+- **Plant a Tree button** on the **right**
 
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
+#### 2) Banner
+
+- A **background image**
+- A **title** and **subtitle**
+- A **centered button**
 
 #### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
 
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
+- **Section heading**
+- **Image on the left**, **text on the right**
+
+#### 4) Our Impact Section
+
+- Show **3 cards** with campaign **statistics**
 
 #### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
 
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
+- **Form**: Name, Email, Number of Trees
+- **Footer** with copyright info
+
+#### 6) Responsiveness
+
+- Website must be **mobile responsive**
 
 ---
-#### 7) Create a README file to answer the following question-
 
+#### 7) Create a README file to answer the following question-
 
 #### 1) What is the difference between var, let, and const?
 
-#### 2) What is the difference between map(), forEach(), and filter()? 
+var is function-scoped and is hoisted. it can be re-declared and updated.
+
+let is block-scoped, not hoisted in the same way as var .temporal dead zone before declaration. It can be updated but not re-declared in the same scope.
+
+const is also block-scoped and must be initialized at declaration. The binding cannot be reassigned, but if the value is an object or array.
+
+#### 2) What is the difference between map(), forEach(), and filter()?
+
+forEach is a callback. iterates over an array and runs callback for each item. it returns undefined
+
+map iterates and returns a new array whose elements are the result of callback for each original item.
+
+filter iterates and returns a new array with only the items for which callback returned a truthy value.
 
 #### 3) What are arrow functions in ES6?
 
@@ -91,58 +108,54 @@ https://openapi.programming-hero.com/api/plant/1
 
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
 
-## ⚙️ Functionalities 
+## ⚙️ Functionalities
 
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
+1. Category Loading
+   Load Tree Categories dynamically on the left side.
 
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
+2. Category Click → Tree Data
+   On clicking a category: load trees of that category.
 
 Display in a 3-column card layout.
 
-3) Card Contents 
- Each card includes:
+3.  Card Contents
+    Each card includes:
 
-        - Image
+           - Image
 
-        -  Name
+           -  Name
 
-        - Short description
+           - Short description
 
-        - Category
+           - Category
 
-        - Price
+           - Price
 
-        - Add to Cart button
+           - Add to Cart button
 
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
+4.  Modal on Card Click
+    Clicking a tree name on a card opens a modal with full tree details.
 
+## 🧪 Challenges
 
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
+    1) Add to Cart
     Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
+                          - Shows tree name
 
-    2) Total Calculation 
+    2) Total Calculation
     Calculate total price of trees in cart.
 
-    3) Remove from Cart 
+    3) Remove from Cart
     Clicking ❌ removes tree and deducts price from total.
 
     4) Loading Spinner
     Show spinner while data is loading.
 
-    5) Active Button State 
+    5) Active Button State
     Highlight active category button when selected.
 
-
-
 🧰 Technology Stack:
-        
+
         HTML
 
         CSS (Vanilla / Tailwind / DaisyUI)
@@ -154,12 +167,9 @@ Clicking a tree name on a card opens a modal with full tree details.
 
 ❌ No dummy text or Lorem Ipsum — must use relevant content
 
-
-
-
-
 ## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
+
+- **Live Link :** YOUR_DEPLOYED_URL_HERE
+- **GitHub Private Repository:** YOUR_REPO_URL_HERE
 
 ---

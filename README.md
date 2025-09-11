@@ -104,9 +104,37 @@ filter iterates and returns a new array with only the items for which callback r
 
 #### 3) What are arrow functions in ES6?
 
+const add = (a, b) => a + b;
+
 #### 4) How does destructuring assignment work in ES6?
 
+an array to variables based on their position
+
+const numbers = [10, 20, 30];
+
+const [a, b, c] = numbers;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+10
+20
+30
+
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
+
+const name = "Sejan";
+const age = 22;
+
+// Normal concatenation
+const intro1 = "My name is " + name + " and I am " + age + " years old.";
+
+// Template literal
+const intro2 = `My name is ${name} and I am ${age} years old.`;
+
+console.log(intro1);
+console.log(intro2);
 
 ## ⚙️ Functionalities
 

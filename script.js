@@ -19,8 +19,8 @@ const loadCard = (id) => {
 
     // const url = `https://openapi.programming-hero.com/api/category/${id}`;
 
-    // const url = `https://openapi.programming-hero.com/api/category/1`
-    fetch("https://openapi.programming-hero.com/api/category/${id}")
+    const url = `https://openapi.programming-hero.com/api/category/${id}`
+    fetch(url)
         .then((response) => response.json())
         .then(data => displayCard(data.plants));
     ````
@@ -35,7 +35,7 @@ const displayCard = (cards) => {
         const cardDiv = document.createElement("div");
         cardDiv.innerHTML = `
         
-           <div class="card bg-base-100 w-96 shadow-sm">
+           <div class="card bg-base-100 w-60 py-3 shadow-sm">
   <figure>
     <img src ="${card.image}"/>
   </figure>
@@ -70,7 +70,7 @@ const displayCatagory = (catagorys) => {
         console.log(catagory);
         const catagoryBtn = document.createElement("button");
 
-        catagoryBtn.innerHTML = ` <button onclick="loadCard (${catagory.category_id})" class= " btn btn-outline btn-primary w-full ">${catagory.category_name}</button>
+        catagoryBtn.innerHTML = `<button onclick="loadCard(${catagory.id})" class= " btn btn-outline btn-primary w-full ">${catagory.category_name}</button>
             `;
         catagoryContainer.appendChild(catagoryBtn);
 
@@ -97,3 +97,11 @@ const displaylessons = (lessons) => {
 }
 
 loadlessons()  */
+
+
+document.getElementById('checkout').addEventListener('click', () => {
+    if (!cart.length) return alert('Your cart is empty.');
+    alert(`Thank you! You planted ${cart.length} tree(s). Total: ${formatPrice(getCartTotal())}`);
+    cart = [];
+    renderCart();
+});

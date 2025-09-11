@@ -4,34 +4,29 @@ const loadcatagory = () => {
         .then((data) => displayCatagory(data.categories));
 
 };
-const cardload = (id) => {
+// const cardload = (id) => {
 
-    const url = `https://openapi.programming-hero.com/api/category/${id}`;
+//     const url = `https://openapi.programming-hero.com/api/category/${id}`;
 
-    fetch(url)
-        .then((res) => res.json())
-        .then((data) => console.log(data));
+//     fetch(url)
+//         .then((res) => res.json())
+//         .then((data) => console.log(data));
 
 
-}
+// }
 
-const loadCard = () => {
+const loadCard = (id) => {
 
-    const url = `https://openapi.programming-hero.com/api/category/${id}`;
-    fetch(url)
+    // const url = `https://openapi.programming-hero.com/api/category/${id}`;
+
+    // const url = `https://openapi.programming-hero.com/api/category/1`
+    fetch("https://openapi.programming-hero.com/api/category/${id}")
         .then((response) => response.json())
         .then(data => displayCard(data.plants));
     ````
 
 };
 
-
-//"id": 1,
-//   "image": "https://i.ibb.co.com/cSQdg7tf/mango-min.jpg",
-//     "name": "Mango Tree",
-//    "description": "A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green canopy offers shade, while its sweet fruits are rich in vitamins and minerals.",
-//    "category": "Fruit Tree",
-//    "price": //
 const displayCard = (cards) => {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
@@ -75,7 +70,7 @@ const displayCatagory = (catagorys) => {
         console.log(catagory);
         const catagoryBtn = document.createElement("button");
 
-        catagoryBtn.innerHTML = ` <button onlick="cardLoad()" class= "btn btn-outline btn-primary ">${catagory.category_name}</button>
+        catagoryBtn.innerHTML = ` <button onclick="loadCard (${catagory.category_id})" class= " btn btn-outline btn-primary w-full ">${catagory.category_name}</button>
             `;
         catagoryContainer.appendChild(catagoryBtn);
 
